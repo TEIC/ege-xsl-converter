@@ -7,6 +7,7 @@ import java.net.URISyntaxException;
 import javax.xml.transform.Result;
 
 import net.sf.saxon.lib.StandardOutputResolver;
+import net.sf.saxon.lib.StandardResultDocumentResolver;
 import net.sf.saxon.trans.XPathException;
 
 /**
@@ -74,7 +75,7 @@ public class MultiXslOutputResolver
 			sb.append("/");
 			sb.append(subPath);
 			sb.append(newURI.substring(newURI.lastIndexOf("/"),newURI.length()));
-			return makeOutputFile(new URI(sb.toString()));
+			return StandardResultDocumentResolver.makeOutputFile(new URI(sb.toString()));
 
 		}
 		catch (URISyntaxException err) {
