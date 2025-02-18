@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>pl.psnc.dl.ege</groupId>
   <artifactId>ege-xsl-converter</artifactId>
-  <version>0.5.1</version>
+  <version>0.6.0</version>
   <name>EGE XSL Converter</name>
   <properties>
 
@@ -149,7 +149,7 @@
     <dependency>
       <groupId>net.sf.saxon</groupId>
       <artifactId>Saxon-HE</artifactId>
-      <version>9.8.0-15</version>
+      <version>12.5</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
